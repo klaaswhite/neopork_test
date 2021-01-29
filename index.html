@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Starship</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- bootstrap scrips -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    </head>
+    <body style="background-color: black; color: white;">
+        <div class="container">
+            <div class= "row">
+                <div class="col-10">
+                    <img id="main" style="position: absolute;" src="images\main.png" class="img-fluid" alt="..." style="visibility: shown;">
+                    <img id="upperL" style="position: absolute;" src="images\upperL.png" class="img-fluid" alt="..." style="visibility: shown;">
+                    <img id="upperR" style="position: absolute;" src="images\upperR.png" class="img-fluid" alt="..." style="visibility: shown;">
+                    <img id="lowerL" style="position: absolute;" src="images\lowerL.png" class="img-fluid" alt="..." style="visibility: shown;">
+                    <img id="lowerR" style="position: absolute;" src="images\lowerR.png" class="img-fluid" alt="..." style="visibility: shown;">
+                </div>
+                <div class="col-2">
+                    <div class="container" style="padding: 50%;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="main" id="main_button" onchange="handleChange(this);" checked>
+                            <label class="form-check-label" for="main_button">
+                                main
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="upperL" id="upperL_button" onchange="handleChange(this);" checked>
+                            <label class="form-check-label" for="upperL_button">
+                                upperL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="upperR" id="upperR_button" onchange="handleChange(this);" checked>
+                            <label class="form-check-label" for="upperR_button">
+                                upperR
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="lowerL" id="lowerL_button" onchange="handleChange(this);" checked>
+                            <label class="form-check-label" for="lowerL_button">
+                                lowerL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="lowerR" id="lowerR_button" onchange="handleChange(this);" checked>
+                            <label class="form-check-label" for="lowerR_button">
+                                lowerR
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="script.js" charset="utf-8"></script>
+    </footer>
+</html>
